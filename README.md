@@ -236,9 +236,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-assert-is-complex64array/main/LICENSE
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/stdlib
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
 
 <!-- <related-links> -->
 
