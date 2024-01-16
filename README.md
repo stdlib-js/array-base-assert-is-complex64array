@@ -41,30 +41,38 @@ limitations under the License.
 
 <!-- ./intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-base-assert-is-complex64array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isComplex64Array = require( '@stdlib/array-base-assert-is-complex64array' );
+isComplex64Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isComplex64Array = require( 'path/to/vendor/umd/array-base-assert-is-complex64array/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isComplex64Array;
+})();
+</script>
 ```
 
 #### isComplex64Array( value )
@@ -101,19 +109,24 @@ var bool = isComplex64Array( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Int8Array = require( '@stdlib/array-int8' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
-var Int16Array = require( '@stdlib/array-int16' );
-var Uint16Array = require( '@stdlib/array-uint16' );
-var Int32Array = require( '@stdlib/array-int32' );
-var Uint32Array = require( '@stdlib/array-uint32' );
-var Float32Array = require( '@stdlib/array-float32' );
-var Float64Array = require( '@stdlib/array-float64' );
-var Complex128Array = require( '@stdlib/array-complex128' );
-var Complex64Array = require( '@stdlib/array-complex64' );
-var isComplex64Array = require( '@stdlib/array-base-assert-is-complex64array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isComplex64Array( new Complex64Array( 10 ) );
 // returns true
@@ -153,6 +166,11 @@ bool = isComplex64Array( new Uint8ClampedArray( 10 ) );
 
 bool = isComplex64Array( { 'length': 0 } );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -236,9 +254,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-assert-is-complex64array/main/LICENSE
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array/tree/umd
 
 <!-- <related-links> -->
 
