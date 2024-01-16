@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@deno/mod.js';
+import isComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@v0.1.0-deno/mod.js';
 ```
 
 #### isComplex64Array( value )
@@ -97,7 +97,7 @@ import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@de
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import isComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@deno/mod.js';
+import isComplex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-is-complex64array@v0.1.0-deno/mod.js';
 
 var bool = isComplex64Array( new Complex64Array( 10 ) );
 // returns true
